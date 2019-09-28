@@ -1,0 +1,38 @@
+<theme>
+  <formatVersion>4</formatVersion>
+  <include>./../fusion.xml</include>
+  <view name="system, basic, grid, video, detailed">
+    <image name="logo">
+      <path>./logo.svg</path>
+    </image>
+  </view>
+  <view name="system">
+    <image name="background" extra="true">
+      <path>./background.png</path>
+    </image>
+  </view>
+  <view name="detailed">
+    <text name="md_genre">
+      <pos>.54 0.84</pos>
+      <color>ffffff</color>
+      <fontSize>0.045</fontSize>
+      <zIndex>36</zIndex>
+      <alignment>center</alignment>
+      <size>0.43 0.02</size>
+    </text>
+    <text name="md_publisher">
+      <pos>.54 0.90</pos>
+      <color>ffffff</color>
+      <fontSize>0.060</fontSize>
+      <zIndex>36</zIndex>
+      <alignment>center</alignment>
+      <size>0.43 0.02</size>
+    </text>
+    <image name="md_image">
+      <origin>0 0</origin>
+      <pos>.5 0.26</pos>
+      <zIndex>35</zIndex>
+      <maxSize>0.49 0.9</maxSize>
+    </image>
+  </view>
+</theme>

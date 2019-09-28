@@ -1,0 +1,144 @@
+<!--
+theme name:		Fusion
+author:			Kaleben0
+-->
+
+<theme>
+  <formatVersion>4</formatVersion>
+  <view name="system, basic, detailed, grid, video">
+    <image name="background">
+      <tile>true</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+    </image>
+    <helpsystem name="help">
+      <pos>1 1</pos>
+      <textColor>000000FF</textColor>
+      <iconColor>00000000</iconColor>
+      <fontPath>./_inc/font/OpenSans-Regular.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+    </helpsystem>
+  </view>
+  <view name="system">
+    <image name="background" extra="true">
+      <tile>true</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+    </image>
+    <image name="console" extra="true">
+      <maxSize>0.500 0.700</maxSize>
+      <pos>0.500 0.500</pos>
+      <origin>0.5 0.5</origin>
+    </image>
+  </view>
+  <feature supported="carousel">
+    <view name="system">
+      <!-- Custom Vertical System View -->
+      <image name="console" extra="true">
+        <maxSize>0.500 0.700</maxSize>
+        <pos>0.655 0.465</pos>
+      </image>
+      <carousel name="systemcarousel">
+        <type>vertical_wheel</type>
+        <pos>0.008 0.020</pos>
+        <size>0.45 1</size>
+        <color>FFFFFF00</color>
+        <logoSize>0.5 0.255</logoSize>
+        <logoScale>1.6</logoScale>
+        <maxLogoCount>7</maxLogoCount>
+        <logoRotation>10</logoRotation>
+        <logoRotationOrigin>-2.8 -0.5</logoRotationOrigin>
+        <logoAlignment>center</logoAlignment>
+      </carousel>
+      <text name="systemInfo">
+        <pos>0.25 0.930</pos>
+        <size>0.980 0.050</size>
+        <backgroundColor>FFFFFF00</backgroundColor>
+        <color>FFFFFF</color>
+        <fontPath>./_inc/font/OpenSans-Regular.ttf</fontPath>
+        <fontSize>0.055</fontSize>
+      </text>
+      <image name="metadata_helper_2" extra="true">
+        <path>./_inc/img/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0.91</pos>
+        <zIndex>29</zIndex>
+        <color>000000bf</color>
+        <size>1 0.099</size>
+      </image>
+	<image name="logo_background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>.5 1</size>
+      <tile>false</tile>
+      <path>./_inc/img/background_gamelist_left-red.png</path>
+      <zIndex>30</zIndex>
+    </image>
+    </view>
+  </feature>
+  <view name="basic">
+    <image name="logo">
+      <origin>0 0</origin>
+      <pos>0.005 0.034</pos>
+      <size>1 0</size>
+      <maxSize>0.33 0.19</maxSize>
+    </image>
+    <textlist name="gamelist">
+      <pos>0.1 0.225</pos>
+      <size>0.80 0.68</size>
+      <selectorColor>ffffff00</selectorColor>
+      <selectedColor>FFFFFF</selectedColor>
+      <primaryColor>808080</primaryColor>
+      <secondaryColor>DDDDDD</secondaryColor>
+      <fontPath>./_inc/font/OpenSans-Regular.ttf</fontPath>
+      <fontSize>0.0470</fontSize>
+      <scrollSound>./_inc/sounds/select.wav</scrollSound>
+      <forceUppercase>1</forceUppercase>
+      <alignment>center</alignment>
+    </textlist>
+  </view>
+  <view name="detailed, grid, video">
+    <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_publisher, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_players, md_playcount, md_description">
+      <pos>1 1</pos>
+    </text>
+    <datetime name="md_releasedate,md_lastplayed">
+      <pos>1 1</pos>
+    </datetime>
+    <rating name="md_rating">
+      <pos>1 1</pos>
+    </rating>
+    <image name="logo">
+      <origin>0 0</origin>
+      <pos>0.25 0.04</pos>
+      <size>1 0</size>
+      <maxSize>0.33 0.19</maxSize>
+    </image>
+    <image name="gamelist_background" extra="true">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>.5 1</size>
+      <tile>false</tile>
+      <path>./_inc/img/background_gamelist_left.png</path>
+      <zIndex>30</zIndex>
+    </image>
+    <textlist name="gamelist">
+      <selectorColor>ffffff00</selectorColor>
+      <selectedColor>FFFFFF</selectedColor>
+      <primaryColor>808080</primaryColor>
+      <secondaryColor>DDDDDD</secondaryColor>
+      <pos>-0.02 0.05</pos>
+      <size>0.5 0.90</size>
+      <fontPath>./_inc/font/OpenSans-Regular.ttf</fontPath>
+      <fontSize>0.0470</fontSize>
+      <scrollSound>./_inc/sounds/select.wav</scrollSound>
+      <forceUppercase>1</forceUppercase>
+      <horizontalMargin>0.038</horizontalMargin>
+      <zIndex>40</zIndex>
+    </textlist>
+  </view>
+  <view name="basic, grid, video, detailed">
+    <image name="background" extra="true">
+      <path>./_inc/img/background.png</path>
+    </image>
+  </view>
+</theme>
